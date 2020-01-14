@@ -42,3 +42,9 @@ Route::get('/singleton', function () {
     new \App\Services\Singleton\SingletonService(\App\Models\Singleton\Logger::getInstance(),"Hello Man");
     new \App\Services\Singleton\SingletonService(\App\Models\Singleton\Logger::getInstance(),"Hello Women");
 });
+
+//Template Pattern
+Route::get('/template-method', function () {
+    new \App\Services\TemplateMethod\TemplateMethodService(new \App\Models\TemplateMethod\Employee("mahmoud","mohamed","ahmed"));
+    new \App\Services\TemplateMethod\TemplateMethodService(new \App\Models\TemplateMethod\Student("mahmoud","mohamed","ahmed"));
+});

@@ -77,3 +77,17 @@
 
 
 ```
+## Behavioral Patterns
+
+### Template Method 
+```
+-> The Template Method pattern suggests that you break down an algorithm into a series of steps,
+ turn these steps into methods, and put a series of calls to these methods inside a single “template method.”
+  The steps may either be abstract, or have some default implementation.
+  
+-> Template Method is a behavioral design pattern that allows you to defines a skeleton of an algorithm in a
+ base class and let subclasses override the steps without changing the overall algorithm’s structure.
+   
+
+
+```
